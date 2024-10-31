@@ -1,0 +1,25 @@
+.button{
+    width: 4.875rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+    font: var(--button);
+    color: var(--text-title); 
+    
+    &.primary{
+        background-color: var(--pink-dark);
+        
+        &:hover{
+            background-color: var(--pink-base);
+        }
+    }
+
+
+    &.secondary{
+        background-color: var(--blue-dark);
+
+        &:hover{
+            background-color: var(--blue-mid);
+        }
+    }
+
+}

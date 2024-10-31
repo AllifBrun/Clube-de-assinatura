@@ -1,0 +1,40 @@
+section#hero{
+    position: relative;
+width: 100vw;
+
+  & .hero-container{
+    width: 100%;
+    max-width: 90rem;
+    border: 1px solid pink;
+    margin-inline: auto;
+
+
+    & > img{
+        width: 100%;
+        height: 948px;
+    }
+
+
+   & header{
+    
+    width: 100%;
+    & nav{
+        padding-inline: 10rem;
+        padding-top: 3rem;
+        width: 100%;
+        max-width: 90rem;
+        background-color: transparent;
+
+        display: flex;
+        justify-content: space-between;
+
+
+        position: absolute;
+        top: 0;
+    }
+
+    }
+
+
+  }
+}
