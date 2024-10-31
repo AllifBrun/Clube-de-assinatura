@@ -1,75 +1,142 @@
-section#hero{
+section#hero {
     position: relative;
-width: 100%;
-height: 60rem;
-& .hero-container{
-
-      background: url(../assets/images/hero-background.png);
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
     width: 100%;
-    height: 100%;
-    max-width: 95rem;
+    height: 60rem;
 
+    & .hero-container {
 
+        background: url(../assets/images/hero-background.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
-    margin-inline: auto;
-
-    & > img{
         width: 100%;
-        height: 948px;
+        height: 100%;
+        max-width: 95rem;
+
+
+
+        margin-inline: auto;
+
+        &>img {
+            width: 100%;
+            height: 948px;
+        }
+
+
+        & header {
+
+            width: 100%;
+
+            & nav {
+                padding-inline: 10rem;
+                padding-top: 3rem;
+                width: 100%;
+                max-width: 90rem;
+                background-color: transparent;
+
+                display: flex;
+                justify-content: space-between;
+
+
+                position: absolute;
+                top: 0;
+            }
+
+        }
+
+
+        .title {
+            width: 100%;
+            padding-top: 17rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            & h1 {
+                max-width: 41rem;
+                font: var(--title-lg);
+                color: var(--text-title);
+                text-align: center;
+            }
+
+            & p {
+                max-width: 35rem;
+                font: var(--body-lg);
+                color: var(--text-body);
+                text-align: center;
+            }
+        }
+
+
+
+
     }
 
 
-   & header{
-    
-    width: 100%;
-    & nav{
-        padding-inline: 10rem;
-        padding-top: 3rem;
+    & .texto {
+
+        position: relative;
+
         width: 100%;
-        max-width: 90rem;
-        background-color: transparent;
+        height: 25rem;
+
+        margin-top: 6rem;
+        padding-inline: 7.5rem;
+        box-sizing: border-box;
 
         display: flex;
-        justify-content: space-between;
-
-
-        position: absolute;
-        top: 0;
-    }
-
-    }
-
-
-    .title{
-        width: 100%;
-        padding-top: 17rem;
-
-        display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         align-items: center;
-        gap: 2rem;
-        
-        & h1{
-            max-width: 41rem;
-            font: var(--title-lg);
-            color: var(--text-title);
-            text-align: center;
+
+        & .texto-container{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            position: relative;
+            
+            box-sizing: content-box;
+            &>h2 {
+                
+                color: white;
+                width: 70rem;
+                text-align: center;
+                font: var(--subtitle);
+            }
+            
+            & img {
+                position: absolute;
+                width: 7rem;
+                height: 7rem;
+            }
+
+            & img:nth-child(1){
+                left: 1.5rem;
+                bottom: -6rem;
+                width: 6rem;
+                height: 6rem;
+            }
+
+            & img:nth-child(2){
+                left: 43%;
+                top: -8rem;
+            }
+            & img:nth-child(3){
+                height: 5rem;
+                width: 5rem;
+                right: 0;
+                bottom: -6rem;
+            }
+            
         }
 
-        & p{
-            max-width: 35rem;
-            font: var(--body-lg);
-            color: var(--text-body);
-            text-align: center;
-        }
+
     }
 
+  
 
-
-
-  }
 }

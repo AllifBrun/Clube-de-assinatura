@@ -35,7 +35,7 @@
     --title-sm: bold 2rem var(--raleway);
     --title-xs: bold 1rem var(--raleway);
 
-    --subtitle: medium 2rem/200% var(--raleway);
+    --subtitle: 300 2rem/200% var(--raleway);
     --body-lg: 400 1.25rem/140% var(--raleway);
     --body-md: bold 1rem/140% var(--raleway);
     --body-sm: bold 0.875rem/140% var(--raleway);
@@ -47,7 +47,9 @@
 
 }
 
-
+body{
+    background-color: var(--shape-background);
+}
 
 section{
     width: 100%;
