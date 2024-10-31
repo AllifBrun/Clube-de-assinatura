@@ -4,7 +4,9 @@ section#hero {
     height: 60rem;
 
     & .hero-container {
-
+        opacity: 0;
+        animation: fadeIn 3s ease-in both;
+        
         background: url(../assets/images/hero-background.png);
         background-size: cover;
         background-position: center;
@@ -14,6 +16,8 @@ section#hero {
         height: 100%;
         max-width: 95rem;
 
+        
+        
 
 
         margin-inline: auto;
@@ -25,7 +29,8 @@ section#hero {
 
 
         & header {
-
+            opacity: 0;
+            animation: fadeIn 2s 200ms ease-in both;
             width: 100%;
 
             & nav {
@@ -47,6 +52,8 @@ section#hero {
 
 
         .title {
+            opacity: 0;
+            animation: fadeIn 2s 1.5s ease-in both;
             width: 100%;
             padding-top: 17rem;
 
@@ -67,6 +74,8 @@ section#hero {
                 font: var(--body-lg);
                 color: var(--text-body);
                 text-align: center;
+                opacity: 0;
+                animation: fadeIn 2s 2s ease-in both;
             }
         }
 
@@ -75,6 +84,7 @@ section#hero {
 
     }
 
+    
 
     & .texto {
 
@@ -139,4 +149,12 @@ section#hero {
 
   
 
+}
+
+@keyframes fadeIn 
+{
+ 
+to{
+    opacity: 1;
+}
 }
