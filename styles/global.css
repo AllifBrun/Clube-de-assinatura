@@ -37,7 +37,7 @@
 
     --subtitle: 300 2rem/200% var(--raleway);
     --body-lg: 400 1.25rem/140% var(--raleway);
-    --body-md: bold 1rem/140% var(--raleway);
+    --body-md: regular 1rem/140% var(--raleway);
     --body-sm: bold 0.875rem/140% var(--raleway);
     --body-xs: bold .75rem/140% var(--raleway);
 
@@ -54,4 +54,21 @@ body{
 section{
     width: 100%;
     background-color: var(--shape-background);
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
 }

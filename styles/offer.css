@@ -1,0 +1,288 @@
+section#offer{
+    width: 100%;
+    max-width: 95rem;
+    height: 1500px;
+    margin-inline: auto;
+    margin-top: 50rem;
+
+    &>div{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 5px;
+        
+        & p{
+            color: var(--text-body);
+            font: var(--body-md);
+        }
+
+
+        &>div{
+            gap: 1rem;
+            
+            & svg path{
+                    fill: var(--pink-base);
+
+                }
+            
+
+            &>h2{
+                color: var(--text-title);
+                font: var(--title-sm);
+            }
+        }   
+
+    }
+
+
+
+
+
+    .livro{
+        z-index: 0;
+        position: relative;
+        margin-top: 5.5rem;
+
+        &>img{
+            margin-top: 8.375rem;
+            width: 29rem;
+            height: 39rem;
+            z-index: 4;
+        }
+
+
+
+        & .marca-paginas-1, .marca-paginas-2, .marca-paginas-texto, .capa-dura,
+        .broche{
+            position: absolute;
+        }
+
+            .marca-paginas-1, .marca-paginas-2{
+                & img{
+                    width: 10.75rem;
+                    height: 33.5rem;
+                }
+
+                top: 10rem;
+                right: 32.5rem;
+            }
+
+
+            & .marca-paginas-2{
+              top: 11rem;
+            }
+
+
+
+           & .marca-paginas-texto{
+                top: 30rem;
+                right: 34rem;
+                & svg{
+                    width: 9.06rem;
+                    height: 9.5rem;
+                }
+                transform: scale(0.5)
+            }
+
+            & .capa-dura{
+                top: 20rem;
+                left: 40rem;
+                & svg{
+                    width: 11rem;
+                    height: 2rem;
+                }
+
+                & p{
+                }
+            }
+
+            & .capa-dura-texto{
+                position: absolute;
+                top: 20rem;
+                left: 40rem;
+            }
+
+            .broche{
+                top: 30rem;
+                left: 40rem;
+
+                & .broche-container{
+                    position: relative;
+                    
+                    &>div{
+                        transform: scale(.5);
+                        
+
+                        &>p{
+                            position: absolute;
+                            top: -7.5rem;
+                            left: -3.7rem;
+                            width:150px;
+                        }
+
+                        &>svg{
+                            width: 6.56rem;
+                            height: 7.93rem;
+
+                            position: absolute;
+                            top: -5rem;
+                            left: -3rem;
+            
+                        }
+
+                    }
+
+
+                    &>img{
+                        width: 13.875rem;
+                        height: 15.875rem;
+
+                        position: absolute;
+                    }
+
+                }
+
+
+            }
+
+
+    }
+
+    .livro:hover{
+        
+        & .marca-paginas-1{
+            animation: mp1 0.8s ease-out both;
+            z-index: 2;
+        }
+
+        & .marca-paginas-2{
+            animation: mp2 0.8s ease-out both;
+            z-index: 1;
+       }
+
+       & .marca-paginas-texto{
+        animation: mpt 0.8s ease-out both;
+        z-index: 1;
+       }
+
+       & .capa-dura{
+        animation: cpd 0.8s ease-out both;
+        z-index: 1;
+       }
+
+       & .capa-dura-texto{
+        animation: cpdt 0.8s ease-out both;
+
+       }
+
+       & .broche{
+        animation: broche 0.8s ease-out both alternate;
+
+        & .broche-container{
+            &>div{
+                animation: broche-scale 0.8s ease-out both;
+            }
+        }
+       }
+    }
+
+  
+
+
+
+}
+
+@keyframes mp1 {
+    65%{
+        top: 2.9rem;
+        right: 25.9rem;
+        transform: rotate(13deg) scale(1.01);
+      
+    }
+    100%{
+        top: 3.2rem;
+        right: 26rem;
+        transform: rotate(12deg) scale(1);
+    }
+}
+
+@keyframes mp2{
+
+    65%{
+        transform: rotate(24deg) scale(1.01);
+        top: 8.5rem;
+        right: 19.5rem;
+      
+    }
+    100%{
+        top: 9rem;
+        right: 20rem;
+        transform: rotate(22deg) scale(1);
+    }
+}
+
+@keyframes mpt{
+
+    65%{
+        top: 44rem;
+        right: 20rem;
+        scale: (1.1);
+    }
+ 
+    100%{
+        top: 42rem;
+        right: 21rem;
+        transform:  scale(1);
+    }
+}
+
+@keyframes cpd {
+
+    65%{
+        top: 5rem;
+        left: 21rem;
+    }
+    100%{
+        top: 6rem;
+        left: 23rem;
+        transform: scale(1.1);
+    }
+    
+}
+
+@keyframes cpdt{
+    65%{
+        top: 3.5rem;
+        left: 18rem;
+    }
+    100%{
+        top: 4rem;
+        left: 19rem;
+        transform: scale(1.1);
+    }
+
+}
+
+@keyframes broche{
+    65%{
+        top: 37.5rem;
+        left: 23.5rem;
+
+    }
+    100%{
+        top: 37rem;
+        left: 24.6rem;
+    }
+}
+
+@keyframes broche-scale{
+    65%{
+        transform: scale(1.1);
+    }
+    100%{
+
+        transform: scale(1);
+    }
+
+}
