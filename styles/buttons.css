@@ -7,7 +7,7 @@
     
     &.primary{
         background-color: var(--pink-dark);
-        
+        transition: background-color .5s ease;
         &:hover{
             background-color: var(--pink-base);
         }
