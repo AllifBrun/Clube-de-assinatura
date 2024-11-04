@@ -82,7 +82,9 @@ section#offer{
                     width: 9.06rem;
                     height: 9.5rem;
                 }
-                transform: scale(0.5)
+                transform: scale(0.5);
+                z-index: 2;
+                
             }
 
             & .capa-dura{
@@ -111,7 +113,7 @@ section#offer{
                     position: relative;
                     
                     &>div{
-                        transform: scale(.5);
+                        ;
                         
 
                         &>p{
@@ -147,8 +149,65 @@ section#offer{
             }
 
 
+
+            
+    }
+}
+
+
+section#offer{
+    & .livro{
+        & .marca-paginas-1, .marca-paginas-2, .marca-paginas-texto, .capa-dura, .capa-dura-texto, .broche{
+
+            transition: transform .8s ease;
+        }
+
+       
+    }
+}
+
+
+
+
+    section#offer{
+        min-width: 95rem;
+      
+            & .livro:hover{
+
+                & .marca-paginas-1{
+                   
+                  transform: translate(5rem, -7rem) rotate(8deg);
+                }
+
+                & .marca-paginas-2{
+                    z-index: -1;
+                    transform: translate(12rem, -3rem) rotate(15deg);
+                }
+
+                & .marca-paginas-texto{
+                    transform: translate(13rem, 11rem) ;
+                }
+
+                & .capa-dura{
+                    transform: translate(-16rem, -14rem) ;
+                   }
+
+               & .capa-dura-texto{
+                transform: translate(-19rem, -16rem) ;
+               }    
+
+               & .broche{
+                transform: translate(-15rem, 8rem) ;
+               }
+            }
+
+            
+          
+      
     }
 
+
+/*
     .livro:hover{
         
         & .marca-paginas-1{
@@ -192,6 +251,8 @@ section#offer{
 
 
 }
+*/
+/* 
 
 @keyframes mp1 {
     65%{
@@ -286,3 +347,5 @@ section#offer{
     }
 
 }
+
+*/
