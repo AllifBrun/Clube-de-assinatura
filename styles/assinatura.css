@@ -15,7 +15,6 @@ section#assinatura {
     & .pricing {
         width: 100%;
         height: 37.875rem;
-        border: 1px solid pink;
         margin-inline: auto;
         position: relative;
 
@@ -181,12 +180,15 @@ section#assinatura {
                 position: absolute;
                 top: -1rem;
                 left: -3rem;
+                transition: transform .5s ease;
+
             }
 
             & img:nth-child(3){
                 position: absolute;
                 top: 1rem;
                 left: -3.5rem;
+                transition: transform .5s ease;
             }
         }
 
@@ -203,12 +205,16 @@ section#assinatura {
                 position: absolute;
                 bottom: -1rem;
                 right: -3rem;
+                transition: transform .5s ease;
+
             }
 
             & img:nth-child(3){
                 position: absolute;
                 bottom: 1rem;
                 right: -3.5rem;
+                transition: transform .5s ease;
+
             }
         }
 
@@ -302,6 +308,21 @@ section#assinatura {
             & .card:nth-child(1) {
                 transform: translateX(-18rem) translateY(3.5rem) rotate(-8deg);
 
+                &:hover{
+
+                    & img:nth-child(2){
+                        
+                        transform: rotate(-8deg);
+                        
+                    }
+                    
+                    & img:nth-child(3){
+                        
+                        transform: rotate(8deg);
+                        
+                    }
+                    
+                }
             }
 
             & .card:nth-child(2) {}
@@ -310,6 +331,21 @@ section#assinatura {
             & .card:nth-child(3) {
                 transform: translateX(18rem) translateY(3.5rem) rotate(8deg);
 
+                &:hover{
+
+                    & img:nth-child(2){
+                        
+                        transform: rotate(-8deg);
+                        
+                    }
+                    
+                    & img:nth-child(3){
+                        
+                        transform: rotate(8deg);
+                        
+                    }
+                    
+                }
 
             }
 
