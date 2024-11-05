@@ -2,11 +2,11 @@ section#hero {
     position: relative;
     width: 100%;
     height: 60rem;
-    
+
     & .hero-container {
         opacity: 0;
         animation: fadeIn 3s ease-in both;
-        
+
         background: url(../assets/images/hero-background.png);
         background-size: cover;
         background-position: center;
@@ -16,8 +16,8 @@ section#hero {
         height: 100%;
         max-width: 95rem;
 
-        
-        
+
+
 
 
         margin-inline: auto;
@@ -34,6 +34,13 @@ section#hero {
             width: 100%;
 
             & nav {
+
+                .logo-bunny {
+                    background-image: url(../assets/icons/logo-horizontal.svg);
+                    width: 14.375rem;
+                    height: 3.625rem;
+                }
+
                 padding-inline: 10rem;
                 padding-top: 3rem;
                 width: 100%;
@@ -84,82 +91,79 @@ section#hero {
 
     }
 
-    
+
 
     & .texto {
 
 
-        .texto-container{
+        .texto-container {
 
-            &>h2{
-                & span{
+            &>h2 {
+                & span {
                     opacity: 50%;
-        color: #E2E7E9;
+                    color: #E2E7E9;
                 }
             }
         }
 
-        &:hover{
-            & span:nth-child(1){
+        &:hover {
+            & span:nth-child(1) {
                 animation: appear 200ms both;
             }
 
-            & span:nth-child(2){
+            & span:nth-child(2) {
                 animation: appear 200ms 500ms both;
             }
 
-            
-            & span:nth-child(3){
+
+            & span:nth-child(3) {
                 animation: appear 200ms 1s both;
             }
 
 
 
 
-            & .str-1{
+            & .str-1 {
                 animation: strong 200ms both
             }
 
-            & .str-2{
+            & .str-2 {
                 animation: strong 200ms 500ms both
             }
 
-            & .str-3{
+            & .str-3 {
                 animation: strong 200ms 1s both
             }
 
 
 
-            .img-2{
+            .img-2 {
                 animation: icone 200ms 200ms forwards;
-               transition: transform .5s ease;
-            
-                &:hover{
-                    transform: rotate(10deg)
-                    scale(1.2);
+                transition: transform .5s ease;
+
+                &:hover {
+                    transform: rotate(10deg) scale(1.2);
                 }
 
             }
 
-            .img-1{
+            .img-1 {
                 animation: icone 200ms 700ms both;
                 transition: transform .5s ease;
-            
-                &:hover{
-                    transform: rotate(10deg)
-                    scale(1.2);
+
+                &:hover {
+                    transform: rotate(10deg) scale(1.2);
                 }
 
 
             }
 
-            .img-3{
+            .img-3 {
                 animation: icone 200ms 1.2s both;
                 transition: transform .5s ease;
-            
-                &:hover{
-                    transform: rotate(10deg)
-                    scale(1.2);
+
+                &:hover {
+                    transform: rotate(10deg) scale(1.2);
                 }
 
 
@@ -182,34 +186,35 @@ section#hero {
         justify-content: center;
         align-content: center;
 
-        
+
         align-items: center;
 
-        & .texto-container{
+        & .texto-container {
             display: flex;
             justify-content: center;
             align-content: center;
             align-items: center;
             position: relative;
-            
+
             box-sizing: content-box;
+
             &>h2 {
-                
-                
+
+
                 width: 70rem;
                 text-align: center;
                 font: var(--subtitle);
 
-                
 
-               
+
+
 
 
 
 
 
             }
-            
+
             & img {
                 position: absolute;
                 width: 7rem;
@@ -217,79 +222,187 @@ section#hero {
                 scale: 0;
             }
 
-            & img:nth-child(1){
+            & img:nth-child(1) {
                 left: 1.5rem;
                 bottom: -6rem;
                 width: 6rem;
                 height: 6rem;
             }
 
-            & img:nth-child(2){
+            & img:nth-child(2) {
                 left: 43%;
                 top: -8rem;
             }
-            & img:nth-child(3){
+
+            & img:nth-child(3) {
                 height: 5rem;
                 width: 5rem;
                 right: 0;
                 bottom: -6rem;
             }
-            
+
         }
 
 
     }
 
-  
+
 
 }
 
 
-@keyframes icone{
-    to{
+@keyframes icone {
+    to {
         scale: 1;
     }
 }
 
-@keyframes girar{
-    from{
+@keyframes girar {
+    from {
         scale: 1;
         transform: rotate(0);
     }
-    to{
+
+    to {
         scale: 1.1;
         transform: rotate(10deg);
     }
 }
 
-@keyframes fadeIn 
-{
- 
-   to{
-    opacity: 1;
-   }
+@keyframes fadeIn {
+
+    to {
+        opacity: 1;
+    }
 }
 
 
 
 
-@keyframes appear{
-    to{
+@keyframes appear {
+    to {
         opacity: 1;
         color: var(--text-body);
     }
-   
-   
+
+
 }
 
 
 
 
-@keyframes strong{
-    to{
+@keyframes strong {
+    to {
         color: var(--blue-light);
     }
-    
-  
-   
+
+
+
+}
+
+
+
+@media (width < 700px) {
+
+
+
+    section#hero {
+        height: 29rem;
+        max-width: 400px;
+        background-image: url(../assets/images/hero-background.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        & .hero-container {
+            background-image: none;
+
+
+            width: 100%;
+            max-width: 43.75rem;
+
+
+            & header {
+                & nav {
+                    padding-top: 1.25rem;
+                    padding-inline: 1.25rem;
+
+                    & .logo-bunny {
+                        background-image: url(../assets/icons/logo-symbol.svg);
+                        width: 4rem;
+                        height: 3rem;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                }
+
+            }
+
+
+
+            & .title {
+
+                padding-top: 7.25rem;
+                padding-inline: 1.25rem;
+
+                & h1 {
+                    font: bold 28px var(--raleway);
+
+                }
+
+                & p {
+                    font: regular 14px var(--raleway);
+                }
+            }
+
+        }
+
+        & .texto {
+            padding-inline: 1.25rem;
+            width: 100%;
+            margin-top: 0;
+            height: 15rem;
+
+
+            & .texto-container {
+                width: 100%;
+                max-width: 23rem;
+
+                & img:nth-child(1) {
+                    left: 1rem;
+                    bottom: -3rem;
+                    width: 3rem;
+                    height: 3rem;
+                }
+
+                & img:nth-child(2) {
+                    left: 10rem;
+                    top: -3.5rem;
+                    width: 3rem;
+                    height: 3rem;
+                }
+
+                & img:nth-child(3) {
+                    right: 1.5rem;
+                    bottom: -3rem;
+                    width: 3rem;
+                    height: 3rem;
+                }
+
+                & h2 {
+
+                    font: medium 1rem var(--raleway);
+                    padding-inline: 1.25rem;
+
+                    & br {
+                        display: none;
+                    }
+                }
+
+            }
+        }
+    }
+
+
 }
