@@ -190,6 +190,8 @@ section#hero {
         align-items: center;
 
         & .texto-container {
+
+
             display: flex;
             justify-content: center;
             align-content: center;
@@ -198,21 +200,45 @@ section#hero {
 
             box-sizing: content-box;
 
+
+
+
+
+
+
+
+
+            /* ANIMAÇÕES */
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             &>h2 {
 
 
                 width: 70rem;
                 text-align: center;
                 font: var(--subtitle);
-
-
-
-
-
-
-
-
-
             }
 
             & img {
@@ -358,11 +384,155 @@ section#hero {
 
         }
 
+
+
+
+        & .texto:hover {
+
+
+
+
+
+
+            & span:nth-child(1) {
+                animation: none;
+            }
+
+            & span:nth-child(2) {
+                animation: none;
+            }
+
+
+            & span:nth-child(3) {
+                animation: none;
+            }
+
+
+            & .str-1 {
+                animation: none;
+            }
+
+            & .str-2 {
+                animation: none;
+            }
+
+            & .str-3 {
+                animation: none;
+            }
+
+             .img-2 {
+                animation: none;            
+                    transition: none;
+
+                &:hover {
+                    transform: none;
+                }
+
+            }
+
+            .img-1 {
+                animation: none;
+                transition: none;
+
+            &:hover {
+                transform: none;
+            }
+
+
+            }
+
+            .img-3 {
+             animation: none;
+
+            &:hover {
+            }
+
+
+            }
+
+
+
+
+
+        }
+
+
         & .texto {
             padding-inline: 1.25rem;
             width: 100%;
-            margin-top: 0;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
             height: 15rem;
+
+
+            & .texto-container{
+                & > h2{
+                    
+                    /* INICIO ANIMAÇÕES */
+
+
+
+                    & span:nth-child(1) {
+                        animation: appear 3000ms ease-in alternate infinite;
+                    }
+        
+                    & span:nth-child(2) {
+                        animation: appear 3000ms .5s ease-in  alternate infinite;
+                    }
+        
+        
+                    & span:nth-child(3) {
+                        animation: appear 3000ms 1s  ease-in alternate infinite;
+                    }
+        
+        
+        
+        
+                    & .str-1 {
+                        animation: strong 3000ms ease-in alternate infinite;
+                    }
+        
+                    & .str-2 {
+                        animation: strong 3000ms 500ms ease-in alternate infinite;
+                    }
+        
+                    & .str-3 {
+                        animation: strong 3000ms 1s ease-in alternate infinite;
+                    }
+        
+   
+                        
+
+                }
+
+                .img-2 {
+                    animation: icone 4000ms 200ms both;
+                    transition: transform .5s ease;
+    
+                    
+                }
+    
+                .img-1 {
+                    animation: icone 4000ms 700ms  both;
+                    transition: transform .5s ease;
+    
+                    
+    
+    
+                }
+    
+                .img-3 {
+                    animation: icone 4000ms 1.2s  both;
+                    transition: transform .5s ease;
+    
+                    
+    
+    
+                }
+                /* FIM ANIMAÇÕES */
+            }
+
+        
 
 
             & .texto-container {
