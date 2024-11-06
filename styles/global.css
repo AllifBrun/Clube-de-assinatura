@@ -83,7 +83,6 @@ section{
 
 @media (width < 700px){
     body{
-        width: 100vw;
-        max-width: 43.75rem;
+        width: 400px
     }
 }

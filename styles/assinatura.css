@@ -1,4 +1,4 @@
-section#assinatura {
+#assinatura {
     width: 100%;
     max-width: 95rem;
     height: 60rem;
@@ -377,5 +377,75 @@ section#assinatura {
     }
 }
 
+@media (width<700px){
 
+    #assinatura{
+        & > h2{
+            font: bold 24px var(--raleway);
+            margin-bottom: 3rem;
+        }
+
+        & .pricing{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            overflow: scroll;
+            justify-content: space-around;
+            padding-left: 52px;
+            width: 400px;
+            & .card:nth-child(1) {
+                position: relative;
+                min-width: 288px;
+
+                & .button{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 24px;
+                    width: 222px;
+                }
+            }
+            
+            & .card:nth-child(2) {
+                position: relative;
+                min-width: 288px;
+
+                & .button{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 24px;
+                    width: 222px;
+                }
+            }
+
+            & .card:nth-child(3) {
+                position: relative;
+                min-width: 288px;
+
+                & .button{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 24px;
+                    width: 222px;
+                }
+
+            }
+
+
+            &:hover{
+
+                & .card:nth-child(1), .card:nth-child(2), .card:nth-child(3){
+
+                    transform: none;
+                }
+            }
+
+
+        }
+
+    }
+
+}
 

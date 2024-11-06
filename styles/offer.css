@@ -279,8 +279,8 @@ section#offer {
             & .marca-paginas-1 {
                 animation: mp1 linear;
                 animation-timeline: scroll();
-              
-             
+
+
 
 
                 top: 8rem;
@@ -302,7 +302,7 @@ section#offer {
             & .marca-paginas-texto {
                 top: 14rem;
                 left: 13rem;
-                z-index: 4;
+                z-index: 1;
                 width: max-content;
                 animation: mpt linear;
                 animation-timeline: scroll();
@@ -325,7 +325,7 @@ section#offer {
                 animation-timeline: scroll();
                 top: 9rem;
                 left: 9rem;
-                z-index: 4;
+                z-index: 1;
 
                 & svg {
                     width: 3.75rem;
@@ -337,7 +337,7 @@ section#offer {
                 animation: cpdt linear;
                 animation-timeline: scroll();
 
-                z-index: 4;
+                z-index: 1;
                 top: 9rem;
                 left: 9rem;
 
@@ -401,18 +401,22 @@ section#offer {
 
             & .marca-paginas-texto {
                 transform: none;
+                z-index: 1;
             }
 
             & .capa-dura {
                 transform: none;
+                z-index: 1;
             }
 
             & .capa-dura-texto {
                 transform: none;
+                z-index: 1;
             }
 
             & .broche {
                 transform: none;
+                z-index: 1;
             }
         }
 
@@ -420,8 +424,9 @@ section#offer {
     }
 
     @keyframes mp1 {
-     
-        20%, 100% {
+
+        20%,
+        100% {
             transform:
                 translateX(2.5rem) translateY(-2.3rem) rotate(8deg);
         }
@@ -429,14 +434,17 @@ section#offer {
 
     @keyframes mp2 {
 
-        20%, 100% {
+        20%,
+        100% {
             transform:
                 translateX(4.7rem) translateY(-1rem) rotate(20deg);
         }
     }
 
     @keyframes mpt {
-        20%, 100% {
+
+        20%,
+        100% {
             transform:
                 translateX(4rem) translateY(4.5rem);
         }
@@ -444,7 +452,9 @@ section#offer {
 
 
     @keyframes broche {
-        20%, 100% {
+
+        20%,
+        100% {
             transform:
                 translateX(-7.7rem) translateY(3rem);
         }
@@ -452,14 +462,18 @@ section#offer {
     }
 
     @keyframes cpd {
-        20%, 100% {
+
+        20%,
+        100% {
             transform:
                 translateX(-5rem) translateY(-2.5rem);
         }
     }
 
     @keyframes cpdt {
-        20%, 100% {
+
+        20%,
+        100% {
             transform:
                 translateX(-7.3rem) translateY(-3.2rem);
         }
