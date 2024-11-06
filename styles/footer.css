@@ -202,19 +202,52 @@ section#footer{
 
 
 
+}
+
+@media (width < 700px){
+
+    section#footer{
+        max-width: 400px;
+        padding-inline: 2rem;
+        padding-bottom: 20rem;
+        ;
+        background-image: url(../assets/images/footer-background.png);
+        background-position: center;
+        
+        & .footer-container{
+            max-width: 400px;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+
+            & .social{
+                flex-direction: column;
+                align-items: center;
+
+                & .linha{
+                    top: 3rem;
+                }
+
+                & img{
+                    width: 9.875rem;
+                    height: 2.5rem;
+                }
+
+                & .social-media{
+                    & .teste:hover::before, .teste2:hover::before, .teste3:hover::before, .teste4:hover::before,.teste5:hover::before, .teste6:hover::before{
+                      all: unset;
+                    }
+    
+                   
+                }
 
 
 
 
+            }
 
+        }
 
-
-
-
-
-
-
-
-
+    }
 
 }
