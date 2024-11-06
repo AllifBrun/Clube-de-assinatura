@@ -1,37 +1,37 @@
-section#offer{
+section#offer {
     width: 100%;
     max-width: 95rem;
     height: 1500px;
     margin-inline: auto;
     margin-top: 50rem;
 
-    &>div{
+    &>div {
         display: flex;
         justify-content: center;
         align-content: center;
         align-items: center;
         gap: 5px;
-        
-        & p{
+
+        & p {
             color: var(--text-body);
             font: var(--body-md);
         }
 
 
-        &>div{
+        &>div {
             gap: 1rem;
-            
-            & svg path{
-                    fill: var(--pink-base);
 
-                }
-            
+            & svg path {
+                fill: var(--pink-base);
 
-            &>h2{
+            }
+
+
+            &>h2 {
                 color: var(--text-title);
                 font: var(--title-sm);
             }
-        }   
+        }
 
     }
 
@@ -39,12 +39,12 @@ section#offer{
 
 
 
-    .livro{
+    .livro {
         z-index: 0;
         position: relative;
         margin-top: 5.5rem;
 
-        &>img{
+        &>img {
             margin-top: 8.375rem;
             width: 29rem;
             height: 39rem;
@@ -53,299 +53,423 @@ section#offer{
 
 
 
-        & .marca-paginas-1, .marca-paginas-2, .marca-paginas-texto, .capa-dura,
-        .broche{
+        & .marca-paginas-1,
+        .marca-paginas-2,
+        .marca-paginas-texto,
+        .capa-dura,
+        .broche {
             position: absolute;
         }
 
-            .marca-paginas-1, .marca-paginas-2{
-                & img{
-                    width: 10.75rem;
-                    height: 33.5rem;
-                }
-
-                top: 10rem;
-                right: 32.5rem;
+        .marca-paginas-1,
+        .marca-paginas-2 {
+            & img {
+                width: 10.75rem;
+                height: 33.5rem;
             }
 
+            top: 10rem;
+            right: 32.5rem;
+        }
 
-            & .marca-paginas-2{
-              top: 11rem;
+
+        & .marca-paginas-2 {
+            top: 11rem;
+        }
+
+
+
+        & .marca-paginas-texto {
+            top: 30rem;
+            right: 34rem;
+
+            & svg {
+                width: 9.06rem;
+                height: 9.5rem;
             }
 
+            transform: scale(0.5);
+            z-index: 2;
 
+        }
 
-           & .marca-paginas-texto{
-                top: 30rem;
-                right: 34rem;
-                & svg{
-                    width: 9.06rem;
-                    height: 9.5rem;
-                }
-                transform: scale(0.5);
-                z-index: 2;
-                
+        & .capa-dura {
+            top: 20rem;
+            left: 40rem;
+
+            & svg {
+                width: 11rem;
+                height: 2rem;
             }
 
-            & .capa-dura{
-                top: 20rem;
-                left: 40rem;
-                & svg{
-                    width: 11rem;
-                    height: 2rem;
-                }
+            & p {}
+        }
 
-                & p{
-                }
-            }
+        & .capa-dura-texto {
+            position: absolute;
+            top: 20rem;
+            left: 40rem;
+        }
 
-            & .capa-dura-texto{
-                position: absolute;
-                top: 20rem;
-                left: 40rem;
-            }
+        .broche {
+            top: 30rem;
+            left: 40rem;
 
-            .broche{
-                top: 30rem;
-                left: 40rem;
+            & .broche-container {
+                position: relative;
 
-                & .broche-container{
-                    position: relative;
-                    
-                    &>div{
-                        ;
-                        
+                &>div {
 
-                        &>p{
-                            position: absolute;
-                            top: -7.5rem;
-                            left: -3.7rem;
-                            width:150px;
-                        }
 
-                        &>svg{
-                            width: 6.56rem;
-                            height: 7.93rem;
 
-                            position: absolute;
-                            top: -5rem;
-                            left: -3rem;
-            
-                        }
-
+                    &>p {
+                        position: absolute;
+                        top: -7.5rem;
+                        left: -3.7rem;
+                        width: 150px;
                     }
 
-
-                    &>img{
-                        width: 13.875rem;
-                        height: 15.875rem;
+                    &>svg {
+                        width: 6.56rem;
+                        height: 7.93rem;
 
                         position: absolute;
+                        top: -5rem;
+                        left: -3rem;
+
                     }
 
                 }
 
 
+                &>img {
+                    width: 13.875rem;
+                    height: 15.875rem;
+
+                    position: absolute;
+                }
+
             }
 
 
+        }
 
-            
+
+
+
     }
 }
 
 
-section#offer{
-    & .livro{
-        & .marca-paginas-1, .marca-paginas-2, .marca-paginas-texto, .capa-dura, .capa-dura-texto, .broche{
+section#offer {
+    & .livro {
+
+        & .marca-paginas-1,
+        .marca-paginas-2,
+        .marca-paginas-texto,
+        .capa-dura,
+        .capa-dura-texto,
+        .broche {
 
             transition: transform .8s ease;
         }
 
-       
+
     }
 }
 
 
 
 
-    section#offer{
-        min-width: 95rem;
-      
-            & .livro:hover{
+section#offer {
+    min-width: 95rem;
 
-                & .marca-paginas-1{
-                   
-                  transform: translate(5rem, -7rem) rotate(8deg);
-                }
+    & .livro:hover {
 
-                & .marca-paginas-2{
-                    z-index: -1;
-                    transform: translate(12rem, -3rem) rotate(15deg);
-                }
+        & .marca-paginas-1 {
 
-                & .marca-paginas-texto{
-                    transform: translate(13rem, 11rem) ;
-                }
-
-                & .capa-dura{
-                    transform: translate(-16rem, -14rem) ;
-                   }
-
-               & .capa-dura-texto{
-                transform: translate(-19rem, -16rem) ;
-               }    
-
-               & .broche{
-                transform: translate(-15rem, 8rem) ;
-               }
-            }
-
-            
-          
-      
-    }
-
-
-/*
-    .livro:hover{
-        
-        & .marca-paginas-1{
-            animation: mp1 0.8s ease-out both;
-            z-index: 2;
+            transform: translate(5rem, -7rem) rotate(8deg);
         }
 
-        & .marca-paginas-2{
-            animation: mp2 0.8s ease-out both;
-            z-index: 1;
-       }
+        & .marca-paginas-2 {
+            z-index: -1;
+            transform: translate(12rem, -3rem) rotate(15deg);
+        }
 
-       & .marca-paginas-texto{
-        animation: mpt 0.8s ease-out both;
-        z-index: 1;
-       }
+        & .marca-paginas-texto {
+            transform: translate(13rem, 11rem);
+        }
 
-       & .capa-dura{
-        animation: cpd 0.8s ease-out both;
-        z-index: 1;
-       }
+        & .capa-dura {
+            transform: translate(-16rem, -14rem);
+        }
 
-       & .capa-dura-texto{
-        animation: cpdt 0.8s ease-out both;
+        & .capa-dura-texto {
+            transform: translate(-19rem, -16rem);
+        }
 
-       }
+        & .broche {
+            transform: translate(-15rem, 8rem);
+        }
+    }
 
-       & .broche{
-        animation: broche 0.8s ease-out both alternate;
 
-        & .broche-container{
-            &>div{
-                animation: broche-scale 0.8s ease-out both;
+
+
+}
+
+
+
+@media (width<700px) {
+    section#offer {
+        min-width: 375px;
+        margin-top: 20rem;
+        width: 25rem;
+        height: 40rem;
+
+
+
+        &>div {
+            &>div {
+                svg {
+                    width: 1.25rem;
+                    height: 1.25rem;
+                }
+
+                h2 {
+                    font: bold 1.5rem var(--raleway);
+                }
+
+                p {
+                    font: 400 .875rem/140% var(--raleway);
+                }
+            }
+
+        }
+
+        & .livro {
+            margin-top: 4rem;
+
+            width: 24rem;
+            height: 20rem;
+
+
+            &>img {
+                width: 10rem;
+                height: 13.125rem;
+                z-index: 3;
+            }
+
+
+            & .marca-paginas-1,
+            .marca-paginas-2 {
+
+                top: 0;
+                left: 0;
+
+                & img {
+
+                    width: 3.625rem;
+                    height: 11.25rem;
+
+                }
+            }
+
+
+            & .marca-paginas-1 {
+                animation: mp1 linear;
+                animation-timeline: scroll();
+              
+             
+
+
+                top: 8rem;
+                left: 13.2rem;
+                z-index: 1;
+            }
+
+            & .marca-paginas-2 {
+                top: 8rem;
+                left: 13.2rem;
+                animation: mp2 linear;
+                animation-timeline: scroll();
+
+
+
+            }
+
+
+            & .marca-paginas-texto {
+                top: 14rem;
+                left: 13rem;
+                z-index: 4;
+                width: max-content;
+                animation: mpt linear;
+                animation-timeline: scroll();
+
+                & svg {
+                    width: 3rem;
+                    height: 3.25rem;
+                }
+
+                & p {
+                    font: 400 10px var(--raleway);
+                    position: absolute;
+                    left: 0;
+                    width: max-content;
+                }
+            }
+
+            & .capa-dura {
+                animation: cpd linear;
+                animation-timeline: scroll();
+                top: 9rem;
+                left: 9rem;
+                z-index: 4;
+
+                & svg {
+                    width: 3.75rem;
+                    height: .625rem;
+                }
+            }
+
+            & .capa-dura-texto {
+                animation: cpdt linear;
+                animation-timeline: scroll();
+
+                z-index: 4;
+                top: 9rem;
+                left: 9rem;
+
+                & p {
+                    font: 400 10px var(--raleway);
+                }
+            }
+
+            & .broche {
+                top: 15rem;
+                left: 12rem;
+
+                animation: broche linear;
+                animation-timeline: scroll();
+
+
+                z-index: 1;
+
+                & .broche-container {
+                    & img {
+                        width: 4.68rem;
+                        height: 5.3125rem;
+                    }
+
+                    &>div {
+
+                        & svg {
+                            width: 2.1875rem;
+                            height: 2.6875rem;
+
+                            top: -1.5rem;
+                            left: -0.8rem;
+                        }
+
+                        & p {
+                            font: 400 10px var(--raleway);
+                            top: -3rem;
+                            left: -2rem;
+                        }
+                    }
+                }
+
             }
         }
-       }
+
+        & .livro:hover {
+
+            img {
+                z-index: 3;
+            }
+
+            & .marca-paginas-1 {
+                z-index: 2;
+                transform: none;
+            }
+
+            & .marca-paginas-2 {
+                transform: none;
+                z-index: 1;
+            }
+
+            & .marca-paginas-texto {
+                transform: none;
+            }
+
+            & .capa-dura {
+                transform: none;
+            }
+
+            & .capa-dura-texto {
+                transform: none;
+            }
+
+            & .broche {
+                transform: none;
+            }
+        }
+
+
     }
 
-  
+    @keyframes mp1 {
+     
+        20%, 100% {
+            transform:
+                translateX(2.5rem) translateY(-2.3rem) rotate(8deg);
+        }
+    }
+
+    @keyframes mp2 {
+
+        20%, 100% {
+            transform:
+                translateX(4.7rem) translateY(-1rem) rotate(20deg);
+        }
+    }
+
+    @keyframes mpt {
+        20%, 100% {
+            transform:
+                translateX(4rem) translateY(4.5rem);
+        }
+    }
+
+
+    @keyframes broche {
+        20%, 100% {
+            transform:
+                translateX(-7.7rem) translateY(3rem);
+        }
+
+    }
+
+    @keyframes cpd {
+        20%, 100% {
+            transform:
+                translateX(-5rem) translateY(-2.5rem);
+        }
+    }
+
+    @keyframes cpdt {
+        20%, 100% {
+            transform:
+                translateX(-7.3rem) translateY(-3.2rem);
+        }
+    }
+
+
+
+
+
 
 
 
 }
-*/
-/* 
-
-@keyframes mp1 {
-    65%{
-        top: 2.9rem;
-        right: 25.9rem;
-        transform: rotate(13deg) scale(1.01);
-      
-    }
-    100%{
-        top: 3.2rem;
-        right: 26rem;
-        transform: rotate(12deg) scale(1);
-    }
-}
-
-@keyframes mp2{
-
-    65%{
-        transform: rotate(24deg) scale(1.01);
-        top: 8.5rem;
-        right: 19.5rem;
-      
-    }
-    100%{
-        top: 9rem;
-        right: 20rem;
-        transform: rotate(22deg) scale(1);
-    }
-}
-
-@keyframes mpt{
-
-    65%{
-        top: 44rem;
-        right: 20rem;
-        scale: (1.1);
-    }
- 
-    100%{
-        top: 42rem;
-        right: 21rem;
-        transform:  scale(1);
-    }
-}
-
-@keyframes cpd {
-
-    65%{
-        top: 5rem;
-        left: 21rem;
-    }
-    100%{
-        top: 6rem;
-        left: 23rem;
-        transform: scale(1.1);
-    }
-    
-}
-
-@keyframes cpdt{
-    65%{
-        top: 3.5rem;
-        left: 18rem;
-    }
-    100%{
-        top: 4rem;
-        left: 19rem;
-        transform: scale(1.1);
-    }
-
-}
-
-@keyframes broche{
-    65%{
-        top: 37.5rem;
-        left: 23.5rem;
-
-    }
-    100%{
-        top: 37rem;
-        left: 24.6rem;
-    }
-}
-
-@keyframes broche-scale{
-    65%{
-        transform: scale(1.1);
-    }
-    100%{
-
-        transform: scale(1);
-    }
-
-}
-
-*/
